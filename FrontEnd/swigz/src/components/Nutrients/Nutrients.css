@@ -1,0 +1,386 @@
+.nutriants {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dash {
+  flex-basis: 20%;
+  position: sticky;
+  top: 8%;
+  left: 0;
+  background: white;
+  width: 300px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.side-details ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-details .photo img {
+  margin-left: 23%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid tomato;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.side-details .photo img:hover {
+  transform: scale(1.1);
+}
+
+.name {
+  text-align: center;
+  margin-top: -10px;
+}
+
+.side-details ul {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.side-details ul li {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.icons {
+  margin-right: 3%;
+  color: tomato;
+}
+
+.edit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 2%;
+}
+
+/* Improve readability with spacing */
+.side-details li:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {
+  margin-top: 8px;
+}
+
+/* Add a subtle hover effect to list items */
+.side-details li:hover {
+  border: solid 2px tomato;
+  transition: color 0.3s ease;
+}
+
+.menus {
+  width: 1900px;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.hr {
+  position: sticky;
+  top: 20px;
+  left: 0;
+  border: none;
+  border-left: 2px solid #ccc;
+  height: 100vh;
+  margin-left: 2%;
+  width: 0px;
+}
+
+.explore-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 5%;
+  padding-left: -20px;
+}
+
+.explore-menu h1 {
+  color: #262626;
+  font-weight: 500;
+}
+
+.explore-menu-text {
+  max-width: 60%;
+  columns: #808080;
+}
+
+.explore-menu-lists {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  text-align: center;
+  gap: 0px;
+  align-items: center;
+  margin: 6% 0;
+}
+
+.explore-menu-list::-webkit-scrollbar {
+  display: none;
+}
+
+.explore-menu-list > div {
+  flex: 0 1 calc(33.333% - 10px); /* Three items in a row with some spacing */
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+.explore-menu-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore-menu-list-item img {
+  width: 7.5vw;
+  max-width: 80px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.explore-menu-list-item p {
+  margin-top: 10px;
+  color: #747474;
+  font-size: max(1.4vw, 16px);
+  cursor: pointer;
+}
+
+.explore-menu hr {
+  margin: 10px 0;
+  height: 2px;
+  background-color: #e2e2e2;
+  border: none;
+}
+
+.explore-menu-list-item .active {
+  border: 4px solid tomato;
+  padding: 2px;
+}
+
+/* Calc.css */
+.right-side {
+  flex-basis: 20%;
+}
+
+.calc {
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 300px;
+  margin: 20px 0px auto 30px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.calc .react-calendar {
+  width: 105%;
+  border: none;
+  border-radius: 10px;
+  margin: 5% -1%;
+}
+
+.calc .react-calendar__tile {
+  padding: 3px;
+  margin-top: 10%;
+  border-radius: 50px;
+  background-color: white;
+  border: none;
+  color: black;
+  cursor: pointer;
+  height: 4vh;
+}
+
+.calc .react-calendar__tile--active {
+  background-color: tomato;
+  color: #fff;
+}
+
+.calc .react-calendar__tile--active:enabled:hover {
+  background-color: tomato;
+}
+
+.calc .react-calendar__tile--now {
+  background-color: tomato;
+  color: white;
+}
+
+.calc .react-calendar__tile--now:enabled:hover {
+  background-color: #e9e9e9;
+}
+
+.calc .react-calendar__tile--hasActive {
+  background-color: tomato;
+}
+
+.calc .react-calendar__tile--hasActive:enabled:hover {
+  background-color: #b3d9f2;
+}
+
+.calc .react-calendar__tile abbr {
+  font-size: 13px;
+}
+
+.calc .react-calendar__tile abbr[title] {
+  text-decoration: none;
+}
+
+.calc .react-calendar_month-viewdays_day--weekend {
+  color: #d10000;
+}
+
+.calc .react-calendar_month-viewdays_day--neighboringMonth {
+  color: #ccc;
+}
+
+.react-calendar_month-view_weekdays {
+  padding-left: 10px;
+  gap: 2px;
+}
+
+.react-calendar_navigation_label {
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.react-calendar__navigation__arrow ,
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__label,
+.react-calendarnavigation_prev-button,
+.react-calendar_navigationnext2-button,
+.react-calendarnavigation_next-button {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: -10px;
+}
+
+.calc .react-calendar_year-view .react-calendar_tile {
+  padding: 20px;
+}
+
+.calc .react-calendar_year-view .react-calendar_tile abbr {
+  font-size: 24px;
+}
+
+.calc .react-calendar_decade-view .react-calendar_tile {
+  padding: 20px;
+}
+
+.calc .react-calendar_decade-view .react-calendar_tile abbr {
+  font-size: 24px;
+}
+
+.calc .react-calendar_century-view .react-calendar_tile {
+  padding: 20px;
+}
+
+.calc .react-calendar_century-view .react-calendar_tile abbr {
+  font-size: 24px;
+}
+
+.calc .react-calendar_month-viewdays_day {
+  padding-left: 10px;
+}
+
+.react-calendar__navigation {
+  margin: 10%;
+  height: 3vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.react-calendar_month-view_days {
+  display: flex;
+  width: calc(100% / 1);
+}
+
+.checkout {
+  top: 67%;
+  right: 0;
+  width: 300px;
+  margin: 20px 0px auto 30px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.checkout ul {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.checkout button {
+  margin-top: 5%;
+  width: 100%;
+  color: white;
+  background-color: tomato;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px white;
+  border: 4px solid white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkout button:hover {
+  transform: scale(1.1) translateX(1px);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.8);
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.pagination-button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.pagination-button.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.diet-plan-item{
+  width: 100px;
+  height: 100px;
+  margin-top: 2%;
+  cursor: pointer;
+}
+.diet-plan-item img{
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
+  border: solid 1px black;
+}
+.diet-plan-item p{
+  text-align: center;
+}
+.grid{
+  margin-top: 10% ;
+}

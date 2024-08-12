@@ -1,0 +1,45 @@
+/* ChatBot.css */
+
+.div1 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:tomato;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+.div2 {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    /* background-color:tomato; */
+    border-radius: 50%;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    width: 35%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 16%;
+    margin-right: 0%;
+  }
+  
+  .div:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .chat {
+    width: 50%;
+    height: 50%;
+  }
+  

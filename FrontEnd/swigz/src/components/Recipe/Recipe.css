@@ -1,0 +1,119 @@
+/* Recipe.css */
+.header-recipe{
+    padding-left: 5%;
+    font-size: 40px;
+    font-weight: 1000;
+  }
+  .recipe-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* max-width: 800px; */
+      width: 90%;
+      margin: auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    
+    .recipe-box {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start; 
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 3%;
+    }
+    
+    .recipe-img {
+      flex-basis: 50%; 
+    }
+    
+    .recipe-img img {
+      width: 100%; 
+      height: 500px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+    
+    .recipe-name {
+      flex-basis: 50%; 
+      text-align: left;
+      padding: 0% 5%;
+    }
+    
+    .recipe-name h1 {
+      padding: 2% 0 1% 0%;
+      font-size: 25px;
+      color: tomato;
+      font-weight: 600;
+      margin-top: 0; 
+  }
+  .recipe-name .hrdiv{
+      background-color: tomato; 
+      height: 1px;
+      border: none;
+      
+    }
+    .recipe-name p {
+      padding: 2% 0;
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: 300;
+      color: black;
+    }
+    .ingredients{
+      /* margin-top: 5%; */
+      width: 100%;
+      height: 23vh;
+      padding: 4% 5%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      /* grid-gap: 10px;  */
+      background-color: #E16120;
+      font-size: 15px;
+      font-weight: 400;
+      color: white;
+      /* border-radius: 10px; */
+    }
+    .ingredients li{
+      list-style: none;
+    }
+    .num
+    {
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 1px;
+      background-color: #3A9691;
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 12px;
+      margin-right: 8px;
+      border: 0.5px solid white;
+    }
+    .title{
+      font-size: 25px;
+      padding-top: 2%;
+      
+    }
+    .recipe-measure {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      margin-top: 1rem;
+      background-color: rgba(0, 0, 0, 0.01);
+      padding: 2% 2%;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .recipe-measure li {
+      list-style: none; 
+      margin: 2% 2%;
+    }
+    .instruction{
+      color: #666;
+    }

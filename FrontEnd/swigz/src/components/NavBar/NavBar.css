@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 5px;
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+
+.NavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 150px;
+}
+.menubar-items{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #495449;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navBar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+}
+.navBar-Button{
+    background-color: transparent;
+    font-size: 11px;
+    color: #495449;
+    border: 1px solid tomato;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navBar-Button:hover{
+    background-color: #eee7ee;
+}
+.menubar-items .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+.navBarSearch-icons{
+    position: relative;
+}
+.navBarSearch-icons .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: 2px;
+    right: 0px;
+}

@@ -1,0 +1,73 @@
+.reels{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* backdrop-filter: brightness(0.3); */
+    display: grid;
+    overflow: hidden;
+}
+.center-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.videocontainer{
+    height: 95vh;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+.video-Card{
+    position: relative;
+}
+.video{
+    width: 100vh;
+    max-width: 500px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
+video{
+    width: 100%;
+    height: 650px;
+    scroll-snap-align: start;
+    position: relative;
+    overflow-y: hidden;
+}
+.controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+  }
+  
+  .prev-button, .next-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .prev-button:hover, .next-button:hover {
+    background-color: #ccc;
+  }
+  
+  .prev-button {
+    margin-bottom: 10px;
+  }
+  
+  .next-button {
+    margin-top: 10px;
+  }

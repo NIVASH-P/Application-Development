@@ -1,0 +1,162 @@
+.about{
+
+     
+}
+
+.about-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 500vh; */
+    background-color: #fe5005;
+    color: white;
+}
+.about-header .main{
+
+    text-align: center;
+    margin-top: 10%;
+}
+.about-header h1{
+   
+    font-size: 50px;
+    font-weight: 1500;
+}
+.about-header h6{
+
+    font-size: 20px;
+    font-weight: 400;
+}
+.idea{
+    width: 80%;
+    margin: 0 auto;
+}
+.idea nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 5%;
+}
+.inactive{
+
+    border: solid 1px gray;
+    border-radius: 50px;
+    padding: 1% 5%;
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+}
+.activeabout{
+    background-color: #fe5005;
+    border: solid 1px white;
+    border-radius: 50px;
+    padding: 1% 5%;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+ .content{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+
+}
+ .content img{
+    /* width: 50%; */
+    height: 50vh;
+    flex-basis: 40%;
+}
+ .content div{
+    flex-basis: 60%;
+    margin-top: 10% ;
+    margin: auto 8%;
+}
+.content p{
+    color: rgb(171, 171, 171);
+    font-size: 22px;
+    font-weight: 300;
+    
+}
+.scores {
+    margin: 5%;
+}
+.scores nav ul{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.scores nav ul li{
+    list-style: none;
+    color: rgb(171, 171, 171);
+    border-right: 2px solid gray;
+    border-width: 2px;
+    padding-right: 7%;
+}
+.scores nav ul li span{
+    color: #1ba672;
+    font-size: 40px;
+    font-weight: 700;
+}
+.career{
+    margin: 15% auto;
+    display: flex;
+    background-image: url('../../Assests/girl-banner-about.jpg');
+    background-color: #161a1f;
+    background-position: right;
+    background-position-y: top  ;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    height: 35vh;
+    width: 90%;
+}
+.career-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4%;
+}
+#careers {
+    font-weight: 900;
+    font-size: larger;
+    color: #fe5005;
+}
+
+#discover {
+    font-weight: 900;
+    font-size: x-large;
+    color: white;
+}
+
+.apply {
+    font-weight: 500;
+    border-radius: .5rem;
+    background-color: #fe5005;
+    height: 10rem;
+    width: 50%;
+}
+.members{
+    margin: 5% auto;
+}
+.btn-members{
+    border: solid 1px #fe5005;
+    border-radius: 50px;
+    padding: 1% 2%;
+    width: 15%;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #fe5005;
+    margin-left: 45%;
+}
+.board-members{
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+.card img{
+    height: 30vh;
+    border-radius: 20px;
+}
+.card h4{
+   color:  rgb(171, 171, 171);
+}
